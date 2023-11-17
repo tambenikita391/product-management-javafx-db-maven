@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="541.0" prefWidth="771.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="product_management.ProductManagementScreenController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff6e1f" height="99.0" stroke="BLACK" strokeType="INSIDE" width="771.0" />
+      <Label layoutX="37.0" layoutY="22.0" prefHeight="69.0" prefWidth="359.0" text="Product Management" textFill="#fff6f6">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Button fx:id="addProduct" layoutX="221.0" layoutY="132.0" mnemonicParsing="false" onAction="#addProductDetails" prefHeight="50.0" prefWidth="341.0" style="-fx-background-color: orange;" text="Add Product" textFill="#e8e1e1">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="editProduct" layoutX="221.0" layoutY="204.0" mnemonicParsing="false"  onAction="#editProductDetails"  prefHeight="50.0" prefWidth="341.0" style="-fx-background-color: orange;" text="Edit Product" textFill="#e8e1e1">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="searchProduct" layoutX="221.0" layoutY="277.0" mnemonicParsing="false" prefHeight="50.0"  onAction="#searchProductDetails" prefWidth="341.0" style="-fx-background-color: orange;" text="Search Product" textFill="#e8e1e1">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteProduct" layoutX="226.0" layoutY="348.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="341.0" style="-fx-background-color: orange;" text="Delete Product" textFill="#e8e1e1">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="quit" layoutX="226.0" layoutY="420.0" mnemonicParsing="false" prefHeight="50.0" onAction="#quit"  prefWidth="341.0" style="-fx-border-color: Red;" text="Quit" textFill="#eb4848">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

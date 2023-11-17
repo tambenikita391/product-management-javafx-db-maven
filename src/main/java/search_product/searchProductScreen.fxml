@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity"  fx:controller="search_product.SearchProductScreenController"  maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="753.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff711f" height="92.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" width="754.0" />
+      <Label layoutX="41.0" layoutY="29.0" prefHeight="64.0" prefWidth="243.0" text="Search Product" textFill="#ebe1e1">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <TextField fx:id="productNameToSearch" layoutX="240.0" layoutY="122.0" prefHeight="39.0" prefWidth="330.0" />
+      <TextField fx:id="productID" layoutX="240.0" layoutY="184.0" prefHeight="39.0" prefWidth="330.0" />
+      <TextField fx:id="productName" layoutX="240.0" layoutY="239.0" prefHeight="39.0" prefWidth="330.0" />
+      <TextField fx:id="price" layoutX="240.0" layoutY="303.0" prefHeight="39.0" prefWidth="330.0" />
+      <TextField fx:id="category" layoutX="240.0" layoutY="368.0" prefHeight="39.0" prefWidth="330.0" />
+      <TextField fx:id="quantity" layoutX="240.0" layoutY="430.0" prefHeight="39.0" prefWidth="330.0" />
+      <Button layoutX="596.0" layoutY="117.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="128.0" style="-fx-background-color: green;"  onAction="#search" text="Search" textFill="#ebe1e1">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button layoutX="163.0" layoutY="532.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="154.0" style="-fx-border-color: red;"  onAction="#back"  text="Cancle" textFill="#f54747">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="537.0" layoutY="532.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="154.0" style="-fx-background-color: green;"  onAction="#delete" text="Delete" textFill="#eeebeb">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Label layoutX="24.0" layoutY="126.0" text="ProductNameToSearch">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="189.0" text="ProductID">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="312.0" text="Price">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="243.0" text="Product name">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="372.0" text="Category">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="434.0" text="Quantity">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="userMessage" layoutX="81.0" layoutY="490.0" prefHeight="30.0" prefWidth="397.0" textFill="#f83939">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

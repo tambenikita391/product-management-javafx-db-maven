@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="931.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="add_user.AddUserController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff9b1f" height="66.0" stroke="BLACK" strokeType="INSIDE" width="931.0" />
+      <Label layoutX="50.0" layoutY="11.0" prefHeight="45.0" prefWidth="161.0" text="Add User">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userName" layoutX="276.0" layoutY="127.0" prefHeight="31.0" prefWidth="519.0" promptText="userName" />
+      <TextField fx:id="email" layoutX="272.0" layoutY="193.0" prefHeight="31.0" prefWidth="519.0" promptText="eMail" />
+      <TextField fx:id="role" layoutX="272.0" layoutY="263.0" prefHeight="31.0" prefWidth="519.0" promptText="role" />
+      <TextField fx:id="password" layoutX="272.0" layoutY="338.0" prefHeight="31.0" prefWidth="519.0" promptText="password" />
+      <Label layoutX="82.0" layoutY="127.0" prefHeight="31.0" prefWidth="231.0" text="User Name (English)">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="193.0" prefHeight="31.0" prefWidth="203.0" text="Email">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="263.0" prefHeight="31.0" prefWidth="231.0" text="Role">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="338.0" prefHeight="31.0" prefWidth="212.0" text="Password">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="403.0" prefHeight="31.0" prefWidth="241.0" text="Confirm">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="backToUserManagementScreen" layoutX="128.0" layoutY="568.0" mnemonicParsing="false" onAction="#cancle" prefHeight="31.0" prefWidth="140.0" style="-fx-background-color: red;" text="Cancle" textFill="#eeebeb">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="proceed" layoutX="452.0" layoutY="568.0" mnemonicParsing="false" onAction="#save" prefHeight="31.0" prefWidth="168.0" style="-fx-background-color: green;" text="Save" textFill="#e8e3e3">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <TextField fx:id="confirmPassword" layoutX="265.0" layoutY="411.0" prefHeight="31.0" prefWidth="519.0" promptText="confirmPassword" />
+      <Label fx:id="userMessage" layoutX="82.0" layoutY="487.0" prefHeight="51.0" prefWidth="347.0" textFill="#fc4141">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

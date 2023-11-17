@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="703.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edit_product.EditProductScreenController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff841f" height="84.0" stroke="BLACK" strokeType="INSIDE" width="703.0" />
+      <Label layoutX="54.0" layoutY="28.0" prefHeight="61.0" prefWidth="215.0" text="Edit Product" textFill="#dad5d5">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <TextField fx:id="productNameToEdit" layoutX="258.0" layoutY="111.0" prefHeight="38.0" prefWidth="331.0" promptText="productNameToEdit" />
+      <TextField fx:id="productID" layoutX="258.0" layoutY="170.0" prefHeight="38.0" prefWidth="331.0" promptText="productID" />
+      <TextField fx:id="productName" layoutX="258.0" layoutY="235.0" prefHeight="38.0" prefWidth="331.0" promptText="productName" />
+      <TextField fx:id="price" layoutX="258.0" layoutY="295.0" prefHeight="38.0" prefWidth="331.0" promptText="price" />
+      <TextField fx:id="category" layoutX="258.0" layoutY="360.0" prefHeight="38.0" prefWidth="331.0" promptText="category" />
+      <TextField fx:id="quantity" layoutX="258.0" layoutY="420.0" prefHeight="38.0" prefWidth="331.0" promptText="quantity" />
+      <Label layoutX="26.0" layoutY="115.0" text="productNameToEdit">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="239.0" text="New productName">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="174.0" text="New productID">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="424.0" text="New productQuantity">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="299.0" text="New productPrice">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="364.0" text="New productCategory">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button layoutX="91.0" layoutY="519.0" mnemonicParsing="false" onAction="#back" prefHeight="38.0" prefWidth="141.0" style="-fx-border-color: red;" text="Back" textFill="#f53d3d">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="424.0" layoutY="519.0" mnemonicParsing="false" onAction="#done" prefHeight="38.0" prefWidth="141.0" style="-fx-background-color: green;" text="Done" textFill="#f2efef">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="82.0" layoutY="477.0" prefHeight="31.0" prefWidth="347.0" textFill="#e83636">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="userMessage" layoutX="54.0" layoutY="477.0" prefHeight="31.0" prefWidth="386.0" textFill="#37db3e">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
